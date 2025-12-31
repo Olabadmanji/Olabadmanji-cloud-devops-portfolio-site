@@ -1,0 +1,73 @@
+# Declare HTML document
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  # Set character encoding
+  <meta charset="UTF-8">
+
+  # Make site responsive on all devices
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  # Page title
+  <title>PulseNotify | Event Alerts Made Easy</title>
+
+  # Link to CSS file
+  <link rel="stylesheet" href="style.css">
+
+  # Google font for modern look
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  # Navigation bar
+  <nav class="navbar">
+    <h1>⚡ PulseNotify</h1>
+    <span>Never miss what matters</span>
+  </nav>
+
+  # Hero section
+  <section class="hero">
+    <h2>Stay Updated on Events You Care About</h2>
+    <p>PulseNotify sends instant email alerts when new events are announced.</p>
+  </section>
+
+  # Main container
+  <main class="container">
+
+    # Events display section
+    <section class="card">
+      <h3>📅 Upcoming Events</h3>
+      <div id="events"></div>
+    </section>
+
+    # Subscription section
+    <section class="card highlight">
+      <h3>📬 Get Event Alerts</h3>
+      <p>Subscribe to receive event announcements straight to your inbox.</p>
+      <input type="email" id="email" placeholder="you@example.com">
+      <button onclick="subscribe()">Subscribe</button>
+    </section>
+
+    # Admin / create event section
+    <section class="card">
+      <h3>🚀 Create New Event</h3>
+      <input id="title" placeholder="Event title">
+      <input id="date" type="date">
+      <textarea id="description" placeholder="Event description"></textarea>
+      <button onclick="createEvent()">Create Event</button>
+    </section>
+
+  </main>
+
+  # Footer
+  <footer>
+    <p>© 2025 PulseNotify · Built with AWS Serverless</p>
+  </footer>
+
+  # JavaScript file
+  <script src="script.js"></script>
+
+</body>
+</html>
