@@ -1,40 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Banji Burgers – Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Announcement System – Project</title>
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
 
-<h1>Banji Burgers</h1>
+<body class="project-page">
 
-<p>
-A static restaurant website hosted using cloud services.
-This project demonstrates static hosting, storage, and deployment concepts.
-</p>
+  <header class="project-header">
+    <h1>Event Announcement System</h1>
+    <p class="project-subtitle">
+      A serverless event notification system built with AWS services.
+    </p>
+  </header>
 
-<h2>Architecture</h2>
-<img src="../assets/diagrams/banji-architecture.png" alt="Architecture diagram">
+  <section class="project-description">
+    <p>
+      This project is a cloud-based <strong>Event Announcement System</strong> 
+      that allows event organizers to publish announcements and notify subscribers 
+      via email in real time.
+    </p>
 
-<h2>Tech Stack</h2>
-<ul>
-  <li>HTML, CSS</li>
-  <li>AWS S3 (Static Website Hosting)</li>
-  <li>GitHub Pages</li>
-</ul>
+    <p>
+      It demonstrates serverless architecture using AWS Lambda and SNS, 
+      with a static frontend hosted on Amazon S3.
+    </p>
+  </section>
 
-<h2>Links</h2>
-<ul>
-  <li><a href="https://github.com/yourusername/banji-burgers" target="_blank">
-    GitHub Repository
-  </a></li>
+  <section class="project-architecture">
+    <h2>Architecture</h2>
+    <img 
+      src="../assets/diagrams/event-announcement-architecture.png" 
+      alt="Event Announcement System Architecture Diagram">
+  </section>
 
-  <li><a href="https://yourusername.github.io/banji-burgers/" target="_blank">
-    Live Demo
-  </a></li>
-</ul>
+  <section class="project-stack">
+    <h2>Tech Stack</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>AWS S3 (Static Website Hosting)</li>
+      <li>AWS Lambda (Serverless backend)</li>
+      <li>AWS SNS (Email notifications)</li>
+      <li>IAM (Permissions & security)</li>
+      <li>GitHub (Version control)</li>
+    </ul>
+  </section>
 
-<a href="../index.html">← Back to portfolio</a>
+  <section class="project-features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Static frontend hosted on Amazon S3</li>
+      <li>Serverless backend using AWS Lambda</li>
+      <li>Email notifications via Amazon SNS</li>
+      <li>Scalable and cost-efficient architecture</li>
+    </ul>
+  </section>
+
+  <section class="project-links">
+    <h2>Project Links</h2>
+    <ul>
+      <li>
+        <a 
+          href="https://github.com/YOUR_USERNAME/event-announcement-system" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </li>
+      <li>
+        <a 
+          href="http://YOUR_S3_BUCKET_URL" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          Live Demo →
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="project-footer">
+    <a href="../index.html">← Back to portfolio</a>
+  </footer>
 
 </body>
 </html>
